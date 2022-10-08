@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Built-By: FL_LPT-525
+Build-Jdk: 17.0.4.1
+Created-By: Maven Integration for Eclipse
+

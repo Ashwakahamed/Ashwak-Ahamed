@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-08T12:11:02Z" name="Suite" finished-at="2022-10-08T12:12:25Z" duration-ms="83037">
+    <groups>
+    </groups>
+    <test started-at="2022-10-08T12:11:02Z" name="Test" finished-at="2022-10-08T12:12:25Z" duration-ms="83037">
+      <class name="com.runner.WomenPageVerify">
+        <test-method is-config="true" signature="womenPageMethod()[pri:0, instance:com.runner.WomenPageVerify@66d18979]" started-at="2022-10-08T12:12:08Z" name="womenPageMethod" finished-at="2022-10-08T12:12:09Z" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- womenPageMethod -->
+        <test-method signature="womenTest1()[pri:7, instance:com.runner.WomenPageVerify@66d18979]" started-at="2022-10-08T12:12:09Z" name="womenTest1" finished-at="2022-10-08T12:12:19Z" duration-ms="10080" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='In stock']//parent::label//preceding-sibling::div"}
+  (Session info: chrome=106.0.5249.103)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3JTPO5E', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\FL_LPT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 127a0e340973d659731df1d75abc4a40
+*** Element info: {Using=xpath, value=//a[text()='In stock']//parent::label//preceding-sibling::div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='In stock']//parent::label//preceding-sibling::div"}
+  (Session info: chrome=106.0.5249.103)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3JTPO5E', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\FL_LPT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 127a0e340973d659731df1d75abc4a40
+*** Element info: {Using=xpath, value=//a[text()='In stock']//parent::label//preceding-sibling::div}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.utility.Common_methods.btnClick(Common_methods.java:41)
+at com.runner.WomenPageVerify.womenTest1(WomenPageVerify.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- womenTest1 -->
+        <test-method is-config="true" signature="womenPageMethod()[pri:0, instance:com.runner.WomenPageVerify@66d18979]" started-at="2022-10-08T12:12:19Z" name="womenPageMethod" finished-at="2022-10-08T12:12:25Z" duration-ms="6259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- womenPageMethod -->
+        <test-method signature="womenTest2()[pri:8, instance:com.runner.WomenPageVerify@66d18979]" started-at="2022-10-08T12:12:25Z" name="womenTest2" finished-at="2022-10-08T12:12:25Z" duration-ms="65" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Products sorting is broken expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Products sorting is broken expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.runner.WomenPageVerify.womenTest2(WomenPageVerify.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- womenTest2 -->
+      </class> <!-- com.runner.WomenPageVerify -->
+      <class name="com.runner.HeaderFooterVerify">
+        <test-method is-config="true" signature="befAll()[pri:0, instance:com.runner.HeaderFooterVerify@305b7c14]" started-at="2022-10-08T12:11:02Z" name="befAll" finished-at="2022-10-08T12:11:12Z" duration-ms="10073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befAll -->
+        <test-method is-config="true" signature="beforeHeaderFooterValidation()[pri:0, instance:com.runner.HeaderFooterVerify@305b7c14]" started-at="2022-10-08T12:11:12Z" name="beforeHeaderFooterValidation" finished-at="2022-10-08T12:11:12Z" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeHeaderFooterValidation -->
+        <test-method signature="aTest()[pri:1, instance:com.runner.HeaderFooterVerify@305b7c14]" started-at="2022-10-08T12:11:12Z" name="aTest" finished-at="2022-10-08T12:11:16Z" duration-ms="3476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aTest -->
+        <test-method is-config="true" signature="afterHeaderFooterValidation()[pri:0, instance:com.runner.HeaderFooterVerify@305b7c14]" started-at="2022-10-08T12:11:16Z" name="afterHeaderFooterValidation" finished-at="2022-10-08T12:11:16Z" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterHeaderFooterValidation -->
+        <test-method is-config="true" signature="beforeHeaderFooterValidation()[pri:0, instance:com.runner.HeaderFooterVerify@305b7c14]" started-at="2022-10-08T12:11:16Z" name="beforeHeaderFooterValidation" finished-at="2022-10-08T12:11:16Z" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeHeaderFooterValidation -->
+        <test-method signature="bTest()[pri:2, instance:com.runner.HeaderFooterVerify@305b7c14]" started-at="2022-10-08T12:11:16Z" name="bTest" finished-at="2022-10-08T12:11:18Z" duration-ms="2448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bTest -->
+        <test-method is-config="true" signature="afterHeaderFooterValidation()[pri:0, instance:com.runner.HeaderFooterVerify@305b7c14]" started-at="2022-10-08T12:11:18Z" name="afterHeaderFooterValidation" finished-at="2022-10-08T12:11:18Z" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterHeaderFooterValidation -->
+        <test-method is-config="true" signature="beforeHeaderFooterValidation()[pri:0, instance:com.runner.HeaderFooterVerify@305b7c14]" started-at="2022-10-08T12:11:18Z" name="beforeHeaderFooterValidation" finished-at="2022-10-08T12:11:18Z" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeHeaderFooterValidation -->
+        <test-method signature="cTest()[pri:3, instance:com.runner.HeaderFooterVerify@305b7c14]" started-at="2022-10-08T12:11:18Z" name="cTest" finished-at="2022-10-08T12:11:25Z" duration-ms="6759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cTest -->
+        <test-method is-config="true" signature="afterHeaderFooterValidation()[pri:0, instance:com.runner.HeaderFooterVerify@305b7c14]" started-at="2022-10-08T12:11:25Z" name="afterHeaderFooterValidation" finished-at="2022-10-08T12:11:25Z" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterHeaderFooterValidation -->
+      </class> <!-- com.runner.HeaderFooterVerify -->
+      <class name="com.runner.NewsletterVerify">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.runner.NewsletterVerify@6913c1fb]" started-at="2022-10-08T12:11:25Z" name="start" finished-at="2022-10-08T12:11:31Z" duration-ms="6057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="newsTest1()[pri:4, instance:com.runner.NewsletterVerify@6913c1fb]" started-at="2022-10-08T12:11:31Z" name="newsTest1" finished-at="2022-10-08T12:11:44Z" duration-ms="12769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newsTest1 -->
+        <test-method is-config="true" signature="verifyNewsLetter()[pri:0, instance:com.runner.NewsletterVerify@6913c1fb]" started-at="2022-10-08T12:11:44Z" name="verifyNewsLetter" finished-at="2022-10-08T12:11:44Z" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsLetter -->
+        <test-method is-config="true" signature="start()[pri:0, instance:com.runner.NewsletterVerify@6913c1fb]" started-at="2022-10-08T12:11:44Z" name="start" finished-at="2022-10-08T12:11:58Z" duration-ms="14557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="newTest2()[pri:5, instance:com.runner.NewsletterVerify@6913c1fb]" started-at="2022-10-08T12:11:58Z" name="newTest2" finished-at="2022-10-08T12:12:01Z" duration-ms="2705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTest2 -->
+        <test-method is-config="true" signature="verifyNewsLetter()[pri:0, instance:com.runner.NewsletterVerify@6913c1fb]" started-at="2022-10-08T12:12:01Z" name="verifyNewsLetter" finished-at="2022-10-08T12:12:01Z" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsLetter -->
+        <test-method is-config="true" signature="start()[pri:0, instance:com.runner.NewsletterVerify@6913c1fb]" started-at="2022-10-08T12:12:01Z" name="start" finished-at="2022-10-08T12:12:06Z" duration-ms="5087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="newTest3()[pri:6, instance:com.runner.NewsletterVerify@6913c1fb]" started-at="2022-10-08T12:12:06Z" name="newTest3" finished-at="2022-10-08T12:12:08Z" duration-ms="1852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTest3 -->
+        <test-method is-config="true" signature="verifyNewsLetter()[pri:0, instance:com.runner.NewsletterVerify@6913c1fb]" started-at="2022-10-08T12:12:08Z" name="verifyNewsLetter" finished-at="2022-10-08T12:12:08Z" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsLetter -->
+      </class> <!-- com.runner.NewsletterVerify -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
